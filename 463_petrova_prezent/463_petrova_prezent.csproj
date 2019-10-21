@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5C04D340-EAF9-43F6-A23C-C3070F50C9B3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>_463_petrova_prezent</RootNamespace>
+    <AssemblyName>463_petrova_prezent</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="blagodar_begun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="blagodar_begun.Designer.cs">
+      <DependentUpon>blagodar_begun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BMI_KALKULETAR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BMI_KALKULETAR.Designer.cs">
+      <DependentUpon>BMI_KALKULETAR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="contact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="contact.Designer.cs">
+      <DependentUpon>contact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dobav_new_polzovatel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dobav_new_polzovatel.Designer.cs">
+      <DependentUpon>dobav_new_polzovatel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="map.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="map.Designer.cs">
+      <DependentUpon>map.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menu_beguna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu_beguna.Designer.cs">
+      <DependentUpon>menu_beguna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="meny_administratora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="meny_administratora.Designer.cs">
+      <DependentUpon>meny_administratora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="meny_coordinator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="meny_coordinator.Designer.cs">
+      <DependentUpon>meny_coordinator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="moi_rezultati.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="moi_rezultati.Designer.cs">
+      <DependentUpon>moi_rezultati.cs</DependentUpon>
+    </Compile>
+    <Compile Include="moi_sponsori.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="moi_sponsori.Designer.cs">
+      <DependentUpon>moi_sponsori.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nascolko_dolgie_marafon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nascolko_dolgie_marafon.Designer.cs">
+      <DependentUpon>nascolko_dolgie_marafon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="prosmotr_sponsoriv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="prosmotr_sponsoriv.Designer.cs">
+      <DependentUpon>prosmotr_sponsoriv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="redactirovanie_profila.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="redactirovanie_profila.Designer.cs">
+      <DependentUpon>redactirovanie_profila.cs</DependentUpon>
+    </Compile>
+    <Compile Include="registra_na_maraf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registra_na_maraf.Designer.cs">
+      <DependentUpon>registra_na_maraf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="podrobnaia_inf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="podrobnaia_inf.Designer.cs">
+      <DependentUpon>podrobnaia_inf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.Designer.cs">
+      <DependentUpon>1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rezult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rezult.Designer.cs">
+      <DependentUpon>rezult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rezultat_predidush_gonok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rezultat_predidush_gonok.Designer.cs">
+      <DependentUpon>rezultat_predidush_gonok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sponsor_beguna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sponsor_beguna.Designer.cs">
+      <DependentUpon>sponsor_beguna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="spasibo_ZAPLAT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="spasibo_ZAPLAT.Designer.cs">
+      <DependentUpon>spasibo_ZAPLAT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test.Designer.cs">
+      <DependentUpon>test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ychastnic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ychastnic.Designer.cs">
+      <DependentUpon>ychastnic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_aftorizachia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_aftorizachia.Designer.cs">
+      <DependentUpon>Form_aftorizachia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inf.Designer.cs">
+      <DependentUpon>inf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menu_zritel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu_zritel.Designer.cs">
+      <DependentUpon>menu_zritel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ostavit_otzav.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ostavit_otzav.Designer.cs">
+      <DependentUpon>ostavit_otzav.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="regestr_zrichelia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="regestr_zrichelia.Designer.cs">
+      <DependentUpon>regestr_zrichelia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="registr_bedun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registr_bedun.Designer.cs">
+      <DependentUpon>registr_bedun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="statistika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="statistika.Designer.cs">
+      <DependentUpon>statistika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ypravlenia_begunom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ypravlenia_begunom.Designer.cs">
+      <DependentUpon>ypravlenia_begunom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ypravlenia_polzovatelem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ypravlenia_polzovatelem.Designer.cs">
+      <DependentUpon>ypravlenia_polzovatelem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ypravlenie_volonterom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ypravlenie_volonterom.Designer.cs">
+      <DependentUpon>ypravlenie_volonterom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zagruska_volonterov.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zagruska_volonterov.Designer.cs">
+      <DependentUpon>zagruska_volonterov.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="blagodar_begun.resx">
+      <DependentUpon>blagodar_begun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BMI_KALKULETAR.resx">
+      <DependentUpon>BMI_KALKULETAR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="contact.resx">
+      <DependentUpon>contact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dobav_new_polzovatel.resx">
+      <DependentUpon>dobav_new_polzovatel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="map.resx">
+      <DependentUpon>map.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu_beguna.resx">
+      <DependentUpon>menu_beguna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="meny_administratora.resx">
+      <DependentUpon>meny_administratora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="meny_coordinator.resx">
+      <DependentUpon>meny_coordinator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="moi_rezultati.resx">
+      <DependentUpon>moi_rezultati.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="moi_sponsori.resx">
+      <DependentUpon>moi_sponsori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nascolko_dolgie_marafon.resx">
+      <DependentUpon>nascolko_dolgie_marafon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="prosmotr_sponsoriv.resx">
+      <DependentUpon>prosmotr_sponsoriv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="redactirovanie_profila.resx">
+      <DependentUpon>redactirovanie_profila.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registra_na_maraf.resx">
+      <DependentUpon>registra_na_maraf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="podrobnaia_inf.resx">
+      <DependentUpon>podrobnaia_inf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1.resx">
+      <DependentUpon>1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rezult.resx">
+      <DependentUpon>rezult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rezultat_predidush_gonok.resx">
+      <DependentUpon>rezultat_predidush_gonok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sponsor_beguna.resx">
+      <DependentUpon>sponsor_beguna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="spasibo_ZAPLAT.resx">
+      <DependentUpon>spasibo_ZAPLAT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test.resx">
+      <DependentUpon>test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ychastnic.resx">
+      <DependentUpon>ychastnic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_aftorizachia.resx">
+      <DependentUpon>Form_aftorizachia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inf.resx">
+      <DependentUpon>inf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu_zritel.resx">
+      <DependentUpon>menu_zritel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ostavit_otzav.resx">
+      <DependentUpon>ostavit_otzav.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="regestr_zrichelia.resx">
+      <DependentUpon>regestr_zrichelia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registr_bedun.resx">
+      <DependentUpon>registr_bedun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="statistika.resx">
+      <DependentUpon>statistika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ypravlenia_begunom.resx">
+      <DependentUpon>ypravlenia_begunom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ypravlenia_polzovatelem.resx">
+      <DependentUpon>ypravlenia_polzovatelem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ypravlenie_volonterom.resx">
+      <DependentUpon>ypravlenie_volonterom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zagruska_volonterov.resx">
+      <DependentUpon>zagruska_volonterov.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
